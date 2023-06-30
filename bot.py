@@ -34,11 +34,11 @@ async def clips(ctx: commands.Context):
     """
     contains = "https://clips.twitch.tv/"
     LIMIT = 1000
-    author = ctx.author
     clips = []
     text = ""
     title = "Recopilatorio de clips\n"
-    guardar = False
+
+    flag_file = False
 
     try:
         messages = [message async for message in ctx.channel.history(limit=LIMIT) if contains in message.content and message.reference is None]
@@ -56,7 +56,7 @@ async def clips(ctx: commands.Context):
                 text += word + "\n"
     
     
-    if len(title + text) >2000 or guardar and text>0:
+    if len(title + text) >2000 or flag_file and text>0:
         print("Como no se puede mandar mas de 2000 caracteres, se enviara como archivo")
         with open ("clips.txt","w") as file:
             file.write(text)

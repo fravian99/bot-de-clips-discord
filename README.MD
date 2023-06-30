@@ -1,12 +1,17 @@
 # Bot de Clips
-Este es un bot que recopila clips que se han puesto previamente pasador por un canal de discord
-
+Este es un bot que recopila clips que se han puesto previamente pasador por un canal de discord  
+En el caso de que el mensaje con los links se envié con más de 2000 caraceres (el limite de discord por mensaje) se mandara como fichero de texto   
 ## Instrucciones
 ### Descargar python  
-
+La version con la que se ha hecho es con la version 3.11  
+Para **Windows** se puede descargar desde la pagina de [python](https://www.python.org/)  
+Para **Linux** usando el administrador de paquetes de la distribución, por ejemplo en arch seria:
+```bash
+sudo pacman -S python
+```
 ### Descargar la api de discord para python, para ello:
 Para ello, hay que ir abrir una consola tanto en windows como en linux
-```
+```bash
 pip install discord
 ```
 ### Crear bot de discord  
@@ -19,7 +24,7 @@ El token solo se debe de compartir con aquellos en los que confies, piensa que e
 
 ### Ejecutar el archivo bot.py 
 Ya sea con doble click o usando en la ruta del directorio el comando
-```
+```bash
 python bot.py
 ```
 ### Escribir el comando "!clip" para probarlo  
