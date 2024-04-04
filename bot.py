@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands 
-import my_token
+from dotenv import load_dotenv
+from os import getenv
 
 # Establecer permisos por defecto
 intents = discord.Intents.default()
@@ -71,5 +72,6 @@ async def clips(ctx: commands.Context):
     print("Mensaje con link de clips enviado")
     
     
-
-bot.run(my_token.my_token)
+load_dotenv()
+discord_token = getenv("DISCORD_TOKEN")
+bot.run(discord_token)

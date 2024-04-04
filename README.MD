@@ -13,13 +13,18 @@ sudo pacman -S python
 Para ello, hay que ir abrir una consola tanto en windows como en linux
 ```bash
 pip install discord
+pip install python-dotenv
 ```
 ### Crear bot de discord  
 Dejo aqui un link de la documentacion de discord porque use uno que habia hecho hace tiempo y no me acuerdo como ajusté los permisos
 https://discord.com/developers/docs/getting-started  
 
 ### Establecer el Token
-Introducir el token en la variable "my_token" del archivo "my_token.py"
+Introducir el token en la variable "DISKORD_TOKEN" del archivo ".env.example" y renombralo a ".env".   
+Para lo segundo es necesario tener activada la opción de ver extensiones en el administrador de archivos.  El archivo deberia de quedar asi:
+```
+DISCORD_TOKEN=token
+```
 El token solo se debe de compartir con aquellos en los que confies, piensa que ese token se podria usar para que ejecute otros programas
 
 ### Ejecutar el archivo bot.py 
