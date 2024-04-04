@@ -10,10 +10,9 @@ Para **Linux** usando el administrador de paquetes de la distribución, por ejem
 sudo pacman -S python
 ```
 ### Descargar la api de discord para python, para ello:
-Para ello, hay que ir abrir una consola tanto en windows como en linux
+Para ello, hay que ir abrir una consola tanto en windows como en linux y ejecutar el siguiente comando:
 ```bash
-pip install discord
-pip install python-dotenv
+pip install -r requirements.txt
 ```
 ### Crear bot de discord  
 Dejo aqui un link de la documentacion de discord porque use uno que habia hecho hace tiempo y no me acuerdo como ajusté los permisos
